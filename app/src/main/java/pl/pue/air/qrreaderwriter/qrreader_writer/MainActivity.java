@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         // */
         //
 
-
+//permission check moved to auto check. Still left the button.
         CameraPermissionsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -256,6 +256,9 @@ public class MainActivity extends AppCompatActivity {
     //Request Code defined in mainactivity
     //Code provided when user prompts for permission
 
+
+//moved to auto check function
+    /*
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions,
@@ -284,7 +287,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
-
+ */
 }
