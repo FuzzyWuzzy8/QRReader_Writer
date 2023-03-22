@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateQRCode"
+    android:background="@color/black_gray">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/entertext" />
+<FrameLayout
+    android:id="@+id/CreateQRFrameLayout"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="75dp"
+    >
+
+    <TextView
+        android:id="@+id/CreateQRCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="1dp"
+        android:padding="5dp"
+        android:text="@string/appear"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white" />
+
+</FrameLayout>
+
+    <Button
+        android:id="@+id/generate"
+        android:text="@string/createQR"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_below="@+id/CreateQRFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/download"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

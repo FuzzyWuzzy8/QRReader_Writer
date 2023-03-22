@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">QRReader_Writer</string>
+
+
+    <string name="scanQRM">Scan QR Code</string>
+    <string name="createQRM">Create QR Code</string>
+    <string name="language">Language</string>
+    <string name="camerap">Request permissions</string>
+    <string name="permdeny">Permission Denied</string>
+    <string name="permgrant">Permission Granted</string>
+    <string name="alreadygrant">Permission Already Granted</string>
+
+
+    <string name="entertext">Enter text</string>
+    <string name="createQR">Create QR Code</string>
+    <string name="download">Download</string>
+    <string name="appear">Your QR code will appear here</string>
+    <string name="savegallery">Saved to gallery</string>
+
+    <string name="scanQR">Scan QR Code</string>
+    <string name="textQR">Text from QR</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QRReader_Writer</string>
+    <string name="scanQRM">Skanowanie kodu QR</string>
+    <string name="createQRM">Generowanie kodu QR</string>
+    <string name="language">Język</string>
+    <string name="camerap">"Poproś o uprawnienia "</string>
+    <string name="entertext">Wprowadź tekst</string>
+    <string name="createQR">"Utwórz kod QR "</string>
+    <string name="download">Pobierz</string>
+    <string name="appear">"Twój kod QR pojawi się tutaj "</string>
+    <string name="savegallery">"Zapisano w galerii "</string>
+    <string name="scanQR">Zeskanuj kod QR</string>
+    <string name="textQR">Tekst z QR</string>
+    <string name="permdeny">"Odmowa pozwolenia "</string>
+    <string name="permgrant">Pozwolenie udzielone</string>
+    <string name="alreadygrant">"Uprawnienie już przyznane "</string>
+</resources>
