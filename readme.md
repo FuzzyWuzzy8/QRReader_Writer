@@ -10,6 +10,7 @@ This Android application provides a comprehensive solution for both generating a
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
+- [Technologies](#technologies)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -27,6 +28,12 @@ This Android application provides a comprehensive solution for both generating a
 
 - **Multilingual Support:**
   - Choose from multiple languages, including English, Polish, French, and German.
+
+## Technologies
+- **Android Studio:** The official integrated development environment (IDE) for Android app development.
+- **Java:** The primary programming language for Android app development.
+- **ZXing (Zebra Crossing):** A library for encoding and decoding QR codes in Java.
+- **XML:** Used for defining the layout and appearance of UI elements in Android.
 
 ## Screenshots
 
