@@ -34,6 +34,7 @@ This Android application provides a comprehensive solution for both generating a
 - **Java:** The primary programming language for Android app development.
 - **ZXing (Zebra Crossing):** A library for encoding and decoding QR codes in Java.
 - **XML:** Used for defining the layout and appearance of UI elements in Android.
+- **Version Control:** Git (GitHub)
 
 ## Screenshots
 
