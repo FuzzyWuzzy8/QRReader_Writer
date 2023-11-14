@@ -27,7 +27,7 @@ This Android application provides a comprehensive solution for both generating a
   - Display the decoded content of scanned QR codes.
 
 - **Multilingual Support:**
-  - Choose from multiple languages, including English, Polish, French, and German.
+  - Choose from multiple languages, including English, German, French, Polish and Spanish.
 
 ## Technologies
 - **Android Studio:** The official integrated development environment (IDE) for Android app development.
