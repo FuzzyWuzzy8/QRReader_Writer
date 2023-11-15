@@ -30,8 +30,8 @@ This Android application provides a comprehensive solution for both generating a
   - Choose from multiple languages, including English, German, French, Polish and Spanish.
 
 ## Technologies
-- **Android Studio:** The official integrated development environment (IDE) for Android app development.
-- **Java:** The primary programming language for Android app development.
+- **Development Environment:** Android Studio
+- **Programming Language:** Java
 - **ZXing (Zebra Crossing):** A library for encoding and decoding QR codes in Java.
 - **XML:** Used for defining the layout and appearance of UI elements in Android.
 - **Version Control:** Git (GitHub)
