@@ -46,6 +46,14 @@ This Android application provides a comprehensive solution for both generating a
 1. Open the project in Android Studio.
 2. Build and run the application on an emulator or Android device.
 
+**To install app on your Android device, follow these steps:**
+
+1. Download the APK file from the [Releases](release-url) page.
+2. Enable installation from unknown sources in your device settings.
+3. Install the APK on your Android device.
+4. Open the Upset Birds app and start playing!
+
+
 ## Usage
 1. Launch the application on your device.
 2. Choose between creating a QR code or scanning an existing one.
