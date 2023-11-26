@@ -37,6 +37,7 @@ This Android application provides a comprehensive solution for both generating a
 - **Version Control:** Git (GitHub)
 
 ## Screenshots
+![Screenshot 1](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_1.png)
 ![Screenshot 3](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_3.png)
 ![Screenshot 4](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_4.png)
 <!-- Add more screenshots later -->
