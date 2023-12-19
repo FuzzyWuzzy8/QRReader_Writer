@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     //
 
     private void showChangeLanguageDialog() {
-        final String[] listItems = {"English", "Polish", "French", "German", "Spanish"};
+        final String[] listItems = {"English", "Polish", "French", "German", "Spanish", "Turkish", "Russian"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
         mBuilder.setTitle("Choose language");
         mBuilder.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener(){
@@ -213,8 +213,19 @@ public class MainActivity extends AppCompatActivity {
             // Spanish
             setLocale("es");
             recreate();
-            break;                  
+            break;
+        case 5:
+            // Turkish
+            setLocale("tr");
+            recreate();
+            break;
+        case 6:
+            // Russian
+            setLocale("ru");
+            recreate();
+            break;
             }
+
         dialogInterface.dismiss();   //dismiss alert dialog when language is selected
             }
         });
