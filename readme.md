@@ -37,6 +37,7 @@ This Android application provides a comprehensive solution for both generating a
 - **Version Control:** Git (GitHub)
 
 ## Screenshots
+![Screenshot 1](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_1.png)
 ![Screenshot 3](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_3.png)
 ![Screenshot 4](https://github.com/FuzzyWuzzy8/QRReader_Writer/blob/master/screenshots/qr_4.png)
 <!-- Add more screenshots later -->
@@ -44,18 +45,17 @@ This Android application provides a comprehensive solution for both generating a
 ## Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/FuzzyWuzzy8/QRReader_Writer.git
    
-1. Open the project in Android Studio.
-2. Build and run the application on an emulator or Android device.
+2. Open the project in Android Studio.
+3. Build and run the application on an emulator or Android device.
 
 **To install app on your Android device, follow these steps:**
 
 1. Download the APK file from the [Releases](release-url) page.
 2. Enable installation from unknown sources in your device settings.
 3. Install the APK on your Android device.
-4. Open the Upset Birds app and start playing!
-
+4. Open the QRReader_Writer app. 
 
 ## Usage
 1. Launch the application on your device.
