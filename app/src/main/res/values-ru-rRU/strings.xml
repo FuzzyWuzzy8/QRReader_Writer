@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QRReader_Writer</string>
+    <string name="scanQRM">Сканировать QR-код</string>
+    <string name="createQRM">Создать QR-код</string>
+    <string name="language">Язык</string>
+    <string name="camerap">Запросить разрешения</string>
+    <string name="permdeny">Доступ запрещен</string>
+    <string name="permgrant">Разрешение получено</string>
+    <string name="alreadygrant">Разрешение уже получено</string>
+    <string name="entertext">Введите текст</string>
+    <string name="createQR">Генератор QR-кода</string>
+    <string name="download">Скачать</string>
+    <string name="appear">Здесь появится ваш QR-код</string>
+    <string name="savegallery">Сохранено в галерее.</string>
+    <string name="scanQR">Сканировать QR-код</string>
+    <string name="textQR">Текст из QR</string>
+</resources>
