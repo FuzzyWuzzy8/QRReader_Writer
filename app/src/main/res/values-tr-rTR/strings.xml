@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QRReader_Writer</string>
+    <string name="scanQRM">QR Kodunu Tara</string>
+    <string name="createQRM">QR Kodu Oluştur</string>
+    <string name="language">Dil</string>
+    <string name="camerap">İzin iste</string>
+    <string name="permdeny">İzin reddedildi</string>
+    <string name="permgrant">İzin verildi</string>
+    <string name="alreadygrant">İzin Zaten Alındı</string>
+    <string name="entertext">"Metni girin "</string>
+    <string name="createQR">QR Kodu Oluştur</string>
+    <string name="download">İndirmek</string>
+    <string name="appear">QR kodunuz burada görünecek</string>
+    <string name="savegallery">Galeriye kaydedildi</string>
+    <string name="scanQR">QR Kodunu Tara</string>
+    <string name="textQR">QR\'den metin</string>
+</resources>
