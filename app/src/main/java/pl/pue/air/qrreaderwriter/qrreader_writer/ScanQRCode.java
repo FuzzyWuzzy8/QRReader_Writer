@@ -2,6 +2,9 @@ package pl.pue.air.qrreaderwriter.qrreader_writer;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.VIBRATE;
+import static android.webkit.URLUtil.isValidUrl;
+import android.content.Intent;
+import android.net.Uri;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +27,9 @@ import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 public class ScanQRCode extends AppCompatActivity {
 
@@ -64,7 +70,6 @@ public class ScanQRCode extends AppCompatActivity {
             }
 
 
-
             @Override
             public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
@@ -78,24 +83,46 @@ public class ScanQRCode extends AppCompatActivity {
 
         barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
-            public void release() {
-
-            }
+            public void release() {}
 
             @Override
             public void receiveDetections(Detector.Detections<Barcode> detections) {
                 final SparseArray<Barcode> qrcode = detections.getDetectedItems();
-                if (qrcode.size() != 0){
+                if (qrcode.size() != 0) {
+                    final String scannedQRValue = qrcode.valueAt(0).displayValue;
                     textView.post(new Runnable() {
                         @Override
                         public void run() {
-                            textView.setText(qrcode.valueAt(0).displayValue);
+                            textView.setText(scannedQRValue);
+                            // Check if the QR value is a valid URL
+                            if (isValidUrl(scannedQRValue)) {
+                                // Open the URL in a browser
+                                openUrl(scannedQRValue);
+                            }
                         }
                     });
                 }
             }
         });
     }
+
+    // Check if a string is a valid URL
+    private boolean isValidUrl(String url) {
+        try {
+            new URL(url).toURI();
+            return true;
+        } catch (MalformedURLException | URISyntaxException e) {
+            return false;
+        }
+    }
+
+    // Open a URL in a web browser
+    private void openUrl(String url) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+
+
 
     /*
 
