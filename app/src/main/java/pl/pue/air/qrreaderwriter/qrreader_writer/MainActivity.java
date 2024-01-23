@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showChangeLanguageDialog() {
         final String[] listItems = {"English", "Polish", "French", "German", "Spanish", "Turkish", "Russian"};
-        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this); //, R.style.LanguageDialog
         mBuilder.setTitle("Choose language");
         //Add custom theme later
         //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.custom_list_item, R.id.text1, listItems);
