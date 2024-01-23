@@ -185,6 +185,8 @@ public class MainActivity extends AppCompatActivity {
         final String[] listItems = {"English", "Polish", "French", "German", "Spanish", "Turkish", "Russian"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
         mBuilder.setTitle("Choose language");
+        //Add custom theme later
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.custom_list_item, R.id.text1, listItems);
         mBuilder.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener(){
             @Override
             public void onClick(DialogInterface dialogInterface, int i){

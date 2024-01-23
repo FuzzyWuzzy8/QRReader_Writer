@@ -50,7 +50,6 @@ public class ScanQRCode extends AppCompatActivity {
         surfaceView = findViewById(R.id.surfacecamerascan);
         textView = findViewById(R.id.textQR);
 
-        //https://developers.google.com/android/reference/com/google/android/gms/vision/CameraSource
         barcodeDetector = new BarcodeDetector.Builder(getApplicationContext())
                 .setBarcodeFormats(Barcode.QR_CODE).build();
         cameraSource = new CameraSource.Builder(getApplicationContext(), barcodeDetector)
@@ -59,7 +58,7 @@ public class ScanQRCode extends AppCompatActivity {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 if(ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA)
-                != PackageManager.PERMISSION_GRANTED){
+                        != PackageManager.PERMISSION_GRANTED){
                     return;
                 }
                 try {
@@ -83,7 +82,9 @@ public class ScanQRCode extends AppCompatActivity {
 
         barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
-            public void release() {}
+            public void release() {
+
+            }
 
             @Override
             public void receiveDetections(Detector.Detections<Barcode> detections) {
@@ -93,6 +94,7 @@ public class ScanQRCode extends AppCompatActivity {
                     textView.post(new Runnable() {
                         @Override
                         public void run() {
+                            //textView.setText(qrcode.valueAt(0).displayValue);
                             textView.setText(scannedQRValue);
                             // Check if the QR value is a valid URL
                             if (isValidUrl(scannedQRValue)) {
@@ -105,8 +107,7 @@ public class ScanQRCode extends AppCompatActivity {
             }
         });
     }
-
-    // Check if a string is a valid URL
+    //Check if a string is a valid URL
     private boolean isValidUrl(String url) {
         try {
             new URL(url).toURI();
@@ -116,16 +117,14 @@ public class ScanQRCode extends AppCompatActivity {
         }
     }
 
-    // Open a URL in a web browser
-    private void openUrl(String url) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(browserIntent);
-    }
-
+        //Open a URL in a web browser
+        private void openUrl (String url){
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(browserIntent);
+        }
 
 
     /*
-
     //to fix.
     //moved to main activity
     private boolean checkPermission() {
@@ -155,7 +154,5 @@ public class ScanQRCode extends AppCompatActivity {
         }
     }
     */
-
-
 
 }
